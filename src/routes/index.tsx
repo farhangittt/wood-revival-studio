@@ -138,6 +138,12 @@ const galleryItems = [
   { img: workshopImg, alt: "Restored Victorian chair in the workshop", caption: "Victorian chair – restored" },
   { img: beforeImg, alt: "Worn table top with scratches before restoration", caption: "Table top – before work" },
   { img: heroImg, alt: "Craftsman hand-polishing an antique table", caption: "Hand-applied shellac" },
+  { img: carvedDoorAsset.url, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – French polished" },
+  { img: gildedChairAsset.url, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & lacquer" },
+  { img: poojaUnitAsset.url, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom build" },
+  { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – custom finish" },
+  { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – veneer finish" },
+  { img: flushDoorAsset.url, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
 ];
 
 function Index() {
