@@ -5,6 +5,12 @@ import heroImg from "@/assets/hero-craftsman.jpg";
 import workshopImg from "@/assets/workshop.jpg";
 import beforeImg from "@/assets/table-before.jpg";
 import afterImg from "@/assets/table-after.jpg";
+import carvedDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.06.44_PM.jpeg.asset.json";
+import gildedChairAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.02.30_PM.jpeg.asset.json";
+import poojaUnitAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.21_PM.jpeg.asset.json";
+import wardrobeSageAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.11_PM.jpeg.asset.json";
+import wardrobeOakAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.22_PM.jpeg.asset.json";
+import flushDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.54.15_PM.jpeg.asset.json";
 
 // ---- PLACEHOLDERS: replace with real business details ----
 const BIZ = {
