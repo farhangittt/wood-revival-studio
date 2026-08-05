@@ -5,33 +5,39 @@ import heroImg from "@/assets/hero-craftsman.jpg";
 import workshopImg from "@/assets/workshop.jpg";
 import beforeImg from "@/assets/table-before.jpg";
 import afterImg from "@/assets/table-after.jpg";
+import logoImg from "@/assets/polishcraft-logo.png";
 import carvedDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.06.44_PM.jpeg.asset.json";
 import gildedChairAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.02.30_PM.jpeg.asset.json";
 import poojaUnitAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.21_PM.jpeg.asset.json";
 import wardrobeSageAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.11_PM.jpeg.asset.json";
 import wardrobeOakAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.22_PM.jpeg.asset.json";
 import flushDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.54.15_PM.jpeg.asset.json";
+import tvUnitAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.52.46_PM.jpeg.asset.json";
+import teakDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.53.33_PM.jpeg.asset.json";
+import chevronWardrobeAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.44_PM.jpeg.asset.json";
+import mandirAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.00.11_PM.jpeg.asset.json";
 
-// ---- PLACEHOLDERS: replace with real business details ----
 const BIZ = {
-  name: "[Your Business Name]",
+  name: "Polishcraft",
+  owner: "Mr. Umair Khan",
   tagline: "French Polishing & Furniture Restoration – Traditional Craftsmanship",
   since: "1986",
-  phoneDisplay: "01234 567 890",
-  phoneHref: "tel:+441234567890",
-  whatsapp: "https://wa.me/441234567890",
-  email: "hello@example.com",
-  street: "123 Main Street",
-  locality: "[Your Town]",
-  region: "[County]",
-  postcode: "AB12 3CD",
-  country: "GB",
-  lat: 51.5074,
-  lng: -0.1278,
+  phoneDisplay: "+91 91096 26472",
+  phoneHref: "tel:+919109626472",
+  whatsapp: "https://wa.me/qr/XNSU5AGOMUP4G1",
+  email: "umer15275@gmail.com",
+  street: "Bagh Umrao Dulha",
+  locality: "Bhopal",
+  region: "Madhya Pradesh",
+  postcode: "462010",
+  country: "IN",
+  lat: 23.2599,
+  lng: 77.4126,
   mapEmbed:
-    "https://www.google.com/maps?q=London,UK&output=embed",
+    "https://www.google.com/maps?q=Bagh+Umrao+Dulha,+Bhopal+462010&output=embed",
   url: "https://www.example.com",
 };
+
 
 const jsonLd = {
   "@context": "https://schema.org",
