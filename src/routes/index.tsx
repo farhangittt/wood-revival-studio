@@ -5,33 +5,39 @@ import heroImg from "@/assets/hero-craftsman.jpg";
 import workshopImg from "@/assets/workshop.jpg";
 import beforeImg from "@/assets/table-before.jpg";
 import afterImg from "@/assets/table-after.jpg";
+import logoImg from "@/assets/polishcraft-logo.png";
 import carvedDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.06.44_PM.jpeg.asset.json";
 import gildedChairAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.02.30_PM.jpeg.asset.json";
 import poojaUnitAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.21_PM.jpeg.asset.json";
 import wardrobeSageAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.11_PM.jpeg.asset.json";
 import wardrobeOakAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.22_PM.jpeg.asset.json";
 import flushDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.54.15_PM.jpeg.asset.json";
+import tvUnitAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.52.46_PM.jpeg.asset.json";
+import teakDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.53.33_PM.jpeg.asset.json";
+import chevronWardrobeAsset from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.44_PM.jpeg.asset.json";
+import mandirAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.00.11_PM.jpeg.asset.json";
 
-// ---- PLACEHOLDERS: replace with real business details ----
 const BIZ = {
-  name: "[Your Business Name]",
+  name: "Polishcraft",
+  owner: "Mr. Umair Khan",
   tagline: "French Polishing & Furniture Restoration – Traditional Craftsmanship",
   since: "1986",
-  phoneDisplay: "01234 567 890",
-  phoneHref: "tel:+441234567890",
-  whatsapp: "https://wa.me/441234567890",
-  email: "hello@example.com",
-  street: "123 Main Street",
-  locality: "[Your Town]",
-  region: "[County]",
-  postcode: "AB12 3CD",
-  country: "GB",
-  lat: 51.5074,
-  lng: -0.1278,
+  phoneDisplay: "+91 91096 26472",
+  phoneHref: "tel:+919109626472",
+  whatsapp: "https://wa.me/qr/XNSU5AGOMUP4G1",
+  email: "umer15275@gmail.com",
+  street: "Bagh Umrao Dulha",
+  locality: "Bhopal",
+  region: "Madhya Pradesh",
+  postcode: "462010",
+  country: "IN",
+  lat: 23.2599,
+  lng: 77.4126,
   mapEmbed:
-    "https://www.google.com/maps?q=London,UK&output=embed",
+    "https://www.google.com/maps?q=Bagh+Umrao+Dulha,+Bhopal+462010&output=embed",
   url: "https://www.example.com",
 };
+
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -144,7 +150,12 @@ const galleryItems = [
   { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – custom finish" },
   { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – veneer finish" },
   { img: flushDoorAsset.url, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
+  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss finish" },
+  { img: teakDoorAsset.url, alt: "Five-panel teak main door with warm polished finish", caption: "Teak panel door – natural polish" },
+  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt duco finish" },
+  { img: mandirAsset.url, alt: "Carved wooden mandir arch with jaali work and drawer unit", caption: "Carved mandir – hand-finished teak" },
 ];
+
 
 function Index() {
   const [sent, setSent] = useState(false);
@@ -169,9 +180,19 @@ function Index() {
 
       <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3">
-          <span className="truncate font-display text-lg font-semibold text-foreground">
-            {BIZ.name}
+          <span className="flex min-w-0 items-center gap-2">
+            <img
+              src={logoImg}
+              alt=""
+              width={36}
+              height={36}
+              className="size-9 shrink-0"
+            />
+            <span className="truncate font-display text-lg font-semibold text-foreground">
+              {BIZ.name}
+            </span>
           </span>
+
           <nav aria-label="Primary" className="flex shrink-0 items-center gap-4 text-sm">
             <a className="hidden hover:text-accent sm:inline" href="#services">Services</a>
             <a className="hidden hover:text-accent sm:inline" href="#gallery">Gallery</a>
