@@ -150,7 +150,12 @@ const galleryItems = [
   { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – custom finish" },
   { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – veneer finish" },
   { img: flushDoorAsset.url, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
+  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss finish" },
+  { img: teakDoorAsset.url, alt: "Five-panel teak main door with warm polished finish", caption: "Teak panel door – natural polish" },
+  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt duco finish" },
+  { img: mandirAsset.url, alt: "Carved wooden mandir arch with jaali work and drawer unit", caption: "Carved mandir – hand-finished teak" },
 ];
+
 
 function Index() {
   const [sent, setSent] = useState(false);
