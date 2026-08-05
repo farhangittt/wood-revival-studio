@@ -180,9 +180,19 @@ function Index() {
 
       <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3">
-          <span className="truncate font-display text-lg font-semibold text-foreground">
-            {BIZ.name}
+          <span className="flex min-w-0 items-center gap-2">
+            <img
+              src={logoImg}
+              alt=""
+              width={36}
+              height={36}
+              className="size-9 shrink-0"
+            />
+            <span className="truncate font-display text-lg font-semibold text-foreground">
+              {BIZ.name}
+            </span>
           </span>
+
           <nav aria-label="Primary" className="flex shrink-0 items-center gap-4 text-sm">
             <a className="hidden hover:text-accent sm:inline" href="#services">Services</a>
             <a className="hidden hover:text-accent sm:inline" href="#gallery">Gallery</a>
