@@ -263,8 +263,8 @@ function Index() {
         <section id="about" className="bg-cream py-20">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
             <img
-              src={workshopImg}
-              alt="Restored Victorian chair beside shellac bottles and hand tools in the workshop"
+              src={mandirAsset.url}
+              alt="Hand-carved wooden mandir with jaali detailing, finished in our workshop"
               loading="lazy"
               width={1200}
               height={900}
@@ -273,19 +273,33 @@ function Index() {
             <div>
               <h2 className="text-3xl font-bold text-foreground sm:text-4xl">About Us</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                {BIZ.name} is a family-run workshop in {BIZ.locality} with over 50 years' combined
-                expertise in French polishing and antique restoration. Every piece is treated by
-                hand, using traditional shellac methods passed down through the trade.
+                Since {BIZ.since}, we have been providing professional furniture polishing and
+                restoration services in {BIZ.locality}. As a family-run business, we specialize in
+                Italian Polishing, PU Polishing, Colour PU Polishing, and Melamine Polishing,
+                delivering premium-quality finishes for homes, offices, hotels, and commercial
+                spaces.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                We give honest advice first: if a sympathetic repair will do, we won't strip a piece
-                unnecessarily. All work is fully insured and guaranteed. [Add credentials, trade
-                memberships or guarantee details here.]
+                Every project is completed with attention to detail, using high-quality materials
+                and proven techniques to restore the natural beauty and durability of your
+                furniture. Whether it's a new piece or restoring an old one, we focus on
+                craftsmanship, quality, and customer satisfaction.
+              </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                We believe in honest advice and transparent service. If a simple repair or touch-up
+                is enough, we'll recommend the most practical solution instead of unnecessary work.
+                Our goal is to provide durable, elegant finishes that enhance the appearance and
+                lifespan of your furniture.
+              </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                With years of experience and a commitment to excellence, we have earned the trust of
+                customers across {BIZ.locality} by delivering reliable workmanship, timely service,
+                and professional results.
               </p>
               <dl className="mt-8 grid grid-cols-3 gap-4">
                 {[
-                  ["40+", "Years trading"],
-                  ["2,000+", "Pieces restored"],
+                  ["20+", "Years experience"],
+                  ["2,000+", "Pieces polished"],
                   ["5★", "Customer rating"],
                 ].map(([n, l]) => (
                   <div key={l} className="rounded-lg border border-border bg-card p-4 text-center">
