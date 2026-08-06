@@ -78,19 +78,19 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `French Polishing & Furniture Restoration in ${BIZ.locality} | ${BIZ.name}`,
+        title: `Wood Polishing & Furniture Restoration in ${BIZ.locality} | ${BIZ.name}`,
       },
       {
         name: "description",
-        content: `Expert French polishing, furniture repair and veneer restoration in ${BIZ.locality}. Family-run craftsmen since ${BIZ.since}. Free no-obligation quotes — call ${BIZ.phoneDisplay}.`,
+        content: `Italian, PU, colour PU and melamine polishing plus furniture restoration in ${BIZ.locality}. Family-run since ${BIZ.since} with 20+ years' experience — call ${BIZ.phoneDisplay}.`,
       },
       {
         property: "og:title",
-        content: `French Polishing & Furniture Restoration in ${BIZ.locality}`,
+        content: `Wood Polishing & Furniture Restoration in ${BIZ.locality}`,
       },
       {
         property: "og:description",
-        content: `Traditional hand-applied finishes, antique repair and custom wood finishes by ${BIZ.name}.`,
+        content: `Italian, PU, colour PU and melamine polishing for homes, offices and hotels by ${BIZ.name}.`,
       },
       { property: "og:url", content: "/" },
     ],
