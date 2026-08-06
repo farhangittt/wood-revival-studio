@@ -303,21 +303,11 @@ function Index() {
 
         {/* GALLERY */}
         <section id="gallery" className="mx-auto max-w-6xl px-4 py-20">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Before &amp; After</h2>
+          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Our Work</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Drag the slider to compare a piece before and after restoration.
+            A selection of recently completed polishing and restoration projects. Tap any photo to
+            view it larger.
           </p>
-          <div className="mt-8">
-            <BeforeAfter
-              before={beforeImg}
-              after={afterImg}
-              beforeAlt="Dining table before restoration, showing scratches and worn finish"
-              afterAlt="Dining table after French polishing, with a deep glossy finish"
-            />
-            <p className="mt-3 text-sm italic text-muted-foreground">
-              Dining table restoration — [Project location, year].
-            </p>
-          </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {galleryItems.map((item) => (
               <li key={item.caption}>
