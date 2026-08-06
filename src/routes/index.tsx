@@ -366,23 +366,6 @@ function Index() {
           </div>
         )}
 
-        {/* TESTIMONIALS */}
-        <section id="testimonials" className="bg-cream py-20">
-          <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-3xl font-bold text-foreground sm:text-4xl">What Customers Say</h2>
-            <ul className="mt-10 grid gap-6 lg:grid-cols-3">
-              {testimonials.map((t) => (
-                <li key={t.quote} className="rounded-lg border border-border bg-card p-6 shadow-warm">
-                  <blockquote className="text-card-foreground">“{t.quote}”</blockquote>
-                  <p className="mt-4 text-sm font-semibold text-muted-foreground">
-                    — {t.name}, {t.place}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
         {/* CONTACT */}
         <section id="contact" className="mx-auto max-w-6xl px-4 py-20">
           <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Get in Touch</h2>
