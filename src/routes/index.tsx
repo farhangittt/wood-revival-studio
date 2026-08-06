@@ -115,16 +115,16 @@ const services = [
 ];
 
 const galleryItems = [
-  { img: carvedDoorAsset.url, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – Italian polish" },
-  { img: gildedChairAsset.url, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & PU" },
-  { img: poojaUnitAsset.url, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom finish" },
-  { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – colour PU" },
-  { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – melamine polish" },
-  { img: flushDoorAsset.url, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
-  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss PU" },
-  { img: teakDoorAsset.url, alt: "Five-panel teak main door with warm polished finish", caption: "Teak panel door – natural polish" },
-  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt colour PU" },
-  { img: mandirAsset.url, alt: "Carved wooden mandir arch with jaali work and drawer unit", caption: "Carved mandir – hand-finished teak" },
+  { img: carvedDoorAsset, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – Italian polish" },
+  { img: gildedChairAsset, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & PU" },
+  { img: poojaUnitAsset, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom finish" },
+  { img: wardrobeSageAsset, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – colour PU" },
+  { img: wardrobeOakAsset, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – melamine polish" },
+  { img: flushDoorAsset, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
+  { img: tvUnitAsset, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss PU" },
+  { img: teakDoorAsset, alt: "Five-panel teak main door with warm polished finish", caption: "Teak panel door – natural polish" },
+  { img: chevronWardrobeAsset, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt colour PU" },
+  { img: mandirAsset, alt: "Carved wooden mandir arch with jaali work and drawer unit", caption: "Carved mandir – hand-finished teak" },
 ];
 
 
