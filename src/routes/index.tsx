@@ -101,58 +101,33 @@ export const Route = createFileRoute("/")({
 
 const services = [
   {
-    title: "French Polishing",
-    body: "Hand-rubbed shellac finishes for antiques and heirlooms. Multiple fine coats build a deep, glossy patina that preserves originality and value.",
+    title: "Italian Polishing",
+    body: "High-gloss Italian finishes with a deep mirror sheen — ideal for premium furniture, wardrobes and feature panels.",
   },
   {
-    title: "Furniture Repair",
-    body: "Structural fixes for splits, loose joints and broken spindles. We glue, clamp and reinforce so damage disappears completely.",
+    title: "PU Polishing",
+    body: "Durable polyurethane coatings that resist scratches, moisture and daily wear while keeping the grain looking rich.",
   },
   {
-    title: "Veneer & Scratch Repair",
-    body: "Chips, cracks, watermarks or heat stains? We colour-match and carefully fill imperfections for a seamless, invisible repair.",
+    title: "Colour PU Polishing",
+    body: "Tinted PU finishes in the shade you want — matt, satin or gloss — perfectly matched to your interiors.",
   },
   {
-    title: "Custom Finishes",
-    body: "Staining, pickling, waxing or new lacquer finishes on new and restored pieces — tailored to your décor and lighting.",
-  },
-];
-
-const testimonials = [
-  {
-    quote:
-      "Outstanding service. They restored our old dining table to perfect condition — it genuinely looks brand new.",
-    name: "[Customer Name]",
-    place: "[Town]",
-  },
-  {
-    quote:
-      "We thought our cabinet was ruined by a heat stain, but the finish was matched flawlessly. Highly recommended.",
-    name: "[Customer Name]",
-    place: "[Town]",
-  },
-  {
-    quote:
-      "Careful, honest and clearly passionate about the craft. Our Victorian chairs came back better than we hoped.",
-    name: "[Customer Name]",
-    place: "[Town]",
+    title: "Melamine Polishing",
+    body: "Fast-drying, economical melamine finishes that give doors, beds and units a smooth, even, long-lasting surface.",
   },
 ];
 
 const galleryItems = [
-  { img: afterImg, alt: "Mahogany dining table after French polishing", caption: "Dining table – after polishing" },
-  { img: workshopImg, alt: "Restored Victorian chair in the workshop", caption: "Victorian chair – restored" },
-  { img: beforeImg, alt: "Worn table top with scratches before restoration", caption: "Table top – before work" },
-  { img: heroImg, alt: "Craftsman hand-polishing an antique table", caption: "Hand-applied shellac" },
-  { img: carvedDoorAsset.url, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – French polished" },
-  { img: gildedChairAsset.url, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & lacquer" },
-  { img: poojaUnitAsset.url, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom build" },
-  { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – custom finish" },
-  { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – veneer finish" },
+  { img: carvedDoorAsset.url, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – Italian polish" },
+  { img: gildedChairAsset.url, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & PU" },
+  { img: poojaUnitAsset.url, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom finish" },
+  { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – colour PU" },
+  { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – melamine polish" },
   { img: flushDoorAsset.url, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
-  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss finish" },
+  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss PU" },
   { img: teakDoorAsset.url, alt: "Five-panel teak main door with warm polished finish", caption: "Teak panel door – natural polish" },
-  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt duco finish" },
+  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt colour PU" },
   { img: mandirAsset.url, alt: "Carved wooden mandir arch with jaali work and drawer unit", caption: "Carved mandir – hand-finished teak" },
 ];
 
