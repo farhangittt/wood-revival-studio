@@ -1,10 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { BeforeAfter } from "@/components/BeforeAfter";
 import heroImg from "@/assets/hero-craftsman.jpg";
-import workshopImg from "@/assets/workshop.jpg";
-import beforeImg from "@/assets/table-before.jpg";
-import afterImg from "@/assets/table-after.jpg";
 import logoImg from "@/assets/polishcraft-logo.png";
 import carvedDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.06.44_PM.jpeg.asset.json";
 import gildedChairAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.02.30_PM.jpeg.asset.json";
@@ -188,7 +184,7 @@ function Index() {
         <section className="relative isolate">
           <img
             src={heroImg}
-            alt="Craftsman applying a hand-rubbed French polish to an antique mahogany table"
+            alt="Craftsman applying a hand-rubbed polish to a wooden furniture surface"
             width={1600}
             height={1008}
             className="absolute inset-0 -z-10 size-full object-cover"
