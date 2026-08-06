@@ -198,8 +198,8 @@ function Index() {
               {BIZ.tagline}
             </h1>
             <p className="mt-5 max-w-2xl text-lg text-primary-foreground/90">
-              Expert furniture repair and hand-applied finishing in {BIZ.locality} — bringing your
-              woodwork back to life.
+              Providing premium wood finishing, furniture restoration, and professional polishing
+              services in {BIZ.locality} with over 20 years of experience.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
