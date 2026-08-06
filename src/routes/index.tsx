@@ -1,10 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { BeforeAfter } from "@/components/BeforeAfter";
 import heroImg from "@/assets/hero-craftsman.jpg";
-import workshopImg from "@/assets/workshop.jpg";
-import beforeImg from "@/assets/table-before.jpg";
-import afterImg from "@/assets/table-after.jpg";
 import logoImg from "@/assets/polishcraft-logo.png";
 import carvedDoorAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.06.44_PM.jpeg.asset.json";
 import gildedChairAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.02.30_PM.jpeg.asset.json";
@@ -20,8 +16,8 @@ import mandirAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.00.11_PM.jpeg.a
 const BIZ = {
   name: "Polishcraft",
   owner: "Mr. Umair Khan",
-  tagline: "French Polishing & Furniture Restoration – Traditional Craftsmanship",
-  since: "1986",
+  tagline: "Italian Polishing | PU Polishing | Colour PU Polishing | Melamine Polishing",
+  since: "2006",
   phoneDisplay: "+91 91096 26472",
   phoneHref: "tel:+919109626472",
   whatsapp: "https://wa.me/qr/XNSU5AGOMUP4G1",
@@ -43,7 +39,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: BIZ.name,
-  description: `French polishing, furniture restoration and veneer repair in ${BIZ.locality}.`,
+  description: `Italian polishing, PU polishing, colour PU polishing, melamine polishing and furniture restoration in ${BIZ.locality}.`,
   address: {
     "@type": "PostalAddress",
     streetAddress: BIZ.street,
@@ -78,19 +74,19 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `French Polishing & Furniture Restoration in ${BIZ.locality} | ${BIZ.name}`,
+        title: `Wood Polishing & Furniture Restoration in ${BIZ.locality} | ${BIZ.name}`,
       },
       {
         name: "description",
-        content: `Expert French polishing, furniture repair and veneer restoration in ${BIZ.locality}. Family-run craftsmen since ${BIZ.since}. Free no-obligation quotes — call ${BIZ.phoneDisplay}.`,
+        content: `Italian, PU, colour PU and melamine polishing plus furniture restoration in ${BIZ.locality}. Family-run since ${BIZ.since} with 20+ years' experience — call ${BIZ.phoneDisplay}.`,
       },
       {
         property: "og:title",
-        content: `French Polishing & Furniture Restoration in ${BIZ.locality}`,
+        content: `Wood Polishing & Furniture Restoration in ${BIZ.locality}`,
       },
       {
         property: "og:description",
-        content: `Traditional hand-applied finishes, antique repair and custom wood finishes by ${BIZ.name}.`,
+        content: `Italian, PU, colour PU and melamine polishing for homes, offices and hotels by ${BIZ.name}.`,
       },
       { property: "og:url", content: "/" },
     ],
@@ -101,58 +97,33 @@ export const Route = createFileRoute("/")({
 
 const services = [
   {
-    title: "French Polishing",
-    body: "Hand-rubbed shellac finishes for antiques and heirlooms. Multiple fine coats build a deep, glossy patina that preserves originality and value.",
+    title: "Italian Polishing",
+    body: "High-gloss Italian finishes with a deep mirror sheen — ideal for premium furniture, wardrobes and feature panels.",
   },
   {
-    title: "Furniture Repair",
-    body: "Structural fixes for splits, loose joints and broken spindles. We glue, clamp and reinforce so damage disappears completely.",
+    title: "PU Polishing",
+    body: "Durable polyurethane coatings that resist scratches, moisture and daily wear while keeping the grain looking rich.",
   },
   {
-    title: "Veneer & Scratch Repair",
-    body: "Chips, cracks, watermarks or heat stains? We colour-match and carefully fill imperfections for a seamless, invisible repair.",
+    title: "Colour PU Polishing",
+    body: "Tinted PU finishes in the shade you want — matt, satin or gloss — perfectly matched to your interiors.",
   },
   {
-    title: "Custom Finishes",
-    body: "Staining, pickling, waxing or new lacquer finishes on new and restored pieces — tailored to your décor and lighting.",
-  },
-];
-
-const testimonials = [
-  {
-    quote:
-      "Outstanding service. They restored our old dining table to perfect condition — it genuinely looks brand new.",
-    name: "[Customer Name]",
-    place: "[Town]",
-  },
-  {
-    quote:
-      "We thought our cabinet was ruined by a heat stain, but the finish was matched flawlessly. Highly recommended.",
-    name: "[Customer Name]",
-    place: "[Town]",
-  },
-  {
-    quote:
-      "Careful, honest and clearly passionate about the craft. Our Victorian chairs came back better than we hoped.",
-    name: "[Customer Name]",
-    place: "[Town]",
+    title: "Melamine Polishing",
+    body: "Fast-drying, economical melamine finishes that give doors, beds and units a smooth, even, long-lasting surface.",
   },
 ];
 
 const galleryItems = [
-  { img: afterImg, alt: "Mahogany dining table after French polishing", caption: "Dining table – after polishing" },
-  { img: workshopImg, alt: "Restored Victorian chair in the workshop", caption: "Victorian chair – restored" },
-  { img: beforeImg, alt: "Worn table top with scratches before restoration", caption: "Table top – before work" },
-  { img: heroImg, alt: "Craftsman hand-polishing an antique table", caption: "Hand-applied shellac" },
-  { img: carvedDoorAsset.url, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – French polished" },
-  { img: gildedChairAsset.url, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & lacquer" },
-  { img: poojaUnitAsset.url, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom build" },
-  { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – custom finish" },
-  { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – veneer finish" },
+  { img: carvedDoorAsset.url, alt: "Hand-carved teak double doors with polished floral detailing", caption: "Carved teak doors – Italian polish" },
+  { img: gildedChairAsset.url, alt: "Ornate armchair with gold leaf carving and ivory lacquer finish", caption: "Gilded armchair – gold leaf & PU" },
+  { img: poojaUnitAsset.url, alt: "Arched pooja unit with gold lotus motif and wooden drawers", caption: "Arched pooja unit – custom finish" },
+  { img: wardrobeSageAsset.url, alt: "Sage green arched wardrobe with fluted open shelving", caption: "Sage arched wardrobe – colour PU" },
+  { img: wardrobeOakAsset.url, alt: "Oak veneer sliding wardrobe with recessed handles", caption: "Oak sliding wardrobe – melamine polish" },
   { img: flushDoorAsset.url, alt: "Solid wood flush door with a deep red-brown polished finish", caption: "Flush door – deep melamine polish" },
-  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss finish" },
+  { img: tvUnitAsset.url, alt: "Built-in white gloss TV unit with grey fluted panel", caption: "TV wall unit – high gloss PU" },
   { img: teakDoorAsset.url, alt: "Five-panel teak main door with warm polished finish", caption: "Teak panel door – natural polish" },
-  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt duco finish" },
+  { img: chevronWardrobeAsset.url, alt: "Grey and white wardrobe with chevron grooved panels", caption: "Chevron wardrobe – matt colour PU" },
   { img: mandirAsset.url, alt: "Carved wooden mandir arch with jaali work and drawer unit", caption: "Carved mandir – hand-finished teak" },
 ];
 
@@ -213,7 +184,7 @@ function Index() {
         <section className="relative isolate">
           <img
             src={heroImg}
-            alt="Craftsman applying a hand-rubbed French polish to an antique mahogany table"
+            alt="Craftsman applying a hand-rubbed polish to a wooden furniture surface"
             width={1600}
             height={1008}
             className="absolute inset-0 -z-10 size-full object-cover"
@@ -227,8 +198,8 @@ function Index() {
               {BIZ.tagline}
             </h1>
             <p className="mt-5 max-w-2xl text-lg text-primary-foreground/90">
-              Expert furniture repair and hand-applied finishing in {BIZ.locality} — bringing your
-              woodwork back to life.
+              Providing premium wood finishing, furniture restoration, and professional polishing
+              services in {BIZ.locality} with over 20 years of experience.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -288,8 +259,8 @@ function Index() {
         <section id="about" className="bg-cream py-20">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
             <img
-              src={workshopImg}
-              alt="Restored Victorian chair beside shellac bottles and hand tools in the workshop"
+              src={mandirAsset.url}
+              alt="Hand-carved wooden mandir with jaali detailing, finished in our workshop"
               loading="lazy"
               width={1200}
               height={900}
@@ -298,19 +269,33 @@ function Index() {
             <div>
               <h2 className="text-3xl font-bold text-foreground sm:text-4xl">About Us</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                {BIZ.name} is a family-run workshop in {BIZ.locality} with over 50 years' combined
-                expertise in French polishing and antique restoration. Every piece is treated by
-                hand, using traditional shellac methods passed down through the trade.
+                Since {BIZ.since}, we have been providing professional furniture polishing and
+                restoration services in {BIZ.locality}. As a family-run business, we specialize in
+                Italian Polishing, PU Polishing, Colour PU Polishing, and Melamine Polishing,
+                delivering premium-quality finishes for homes, offices, hotels, and commercial
+                spaces.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                We give honest advice first: if a sympathetic repair will do, we won't strip a piece
-                unnecessarily. All work is fully insured and guaranteed. [Add credentials, trade
-                memberships or guarantee details here.]
+                Every project is completed with attention to detail, using high-quality materials
+                and proven techniques to restore the natural beauty and durability of your
+                furniture. Whether it's a new piece or restoring an old one, we focus on
+                craftsmanship, quality, and customer satisfaction.
+              </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                We believe in honest advice and transparent service. If a simple repair or touch-up
+                is enough, we'll recommend the most practical solution instead of unnecessary work.
+                Our goal is to provide durable, elegant finishes that enhance the appearance and
+                lifespan of your furniture.
+              </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                With years of experience and a commitment to excellence, we have earned the trust of
+                customers across {BIZ.locality} by delivering reliable workmanship, timely service,
+                and professional results.
               </p>
               <dl className="mt-8 grid grid-cols-3 gap-4">
                 {[
-                  ["40+", "Years trading"],
-                  ["2,000+", "Pieces restored"],
+                  ["20+", "Years experience"],
+                  ["2,000+", "Pieces polished"],
                   ["5★", "Customer rating"],
                 ].map(([n, l]) => (
                   <div key={l} className="rounded-lg border border-border bg-card p-4 text-center">
@@ -328,21 +313,11 @@ function Index() {
 
         {/* GALLERY */}
         <section id="gallery" className="mx-auto max-w-6xl px-4 py-20">
-          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Before &amp; After</h2>
+          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Our Work</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Drag the slider to compare a piece before and after restoration.
+            A selection of recently completed polishing and restoration projects. Tap any photo to
+            view it larger.
           </p>
-          <div className="mt-8">
-            <BeforeAfter
-              before={beforeImg}
-              after={afterImg}
-              beforeAlt="Dining table before restoration, showing scratches and worn finish"
-              afterAlt="Dining table after French polishing, with a deep glossy finish"
-            />
-            <p className="mt-3 text-sm italic text-muted-foreground">
-              Dining table restoration — [Project location, year].
-            </p>
-          </div>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {galleryItems.map((item) => (
               <li key={item.caption}>
@@ -390,23 +365,6 @@ function Index() {
             </figure>
           </div>
         )}
-
-        {/* TESTIMONIALS */}
-        <section id="testimonials" className="bg-cream py-20">
-          <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-3xl font-bold text-foreground sm:text-4xl">What Customers Say</h2>
-            <ul className="mt-10 grid gap-6 lg:grid-cols-3">
-              {testimonials.map((t) => (
-                <li key={t.quote} className="rounded-lg border border-border bg-card p-6 shadow-warm">
-                  <blockquote className="text-card-foreground">“{t.quote}”</blockquote>
-                  <p className="mt-4 text-sm font-semibold text-muted-foreground">
-                    — {t.name}, {t.place}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
 
         {/* CONTACT */}
         <section id="contact" className="mx-auto max-w-6xl px-4 py-20">
