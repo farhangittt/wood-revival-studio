@@ -20,8 +20,8 @@ import mandirAsset from "@/assets/WhatsApp_Image_2026-08-05_at_3.00.11_PM.jpeg.a
 const BIZ = {
   name: "Polishcraft",
   owner: "Mr. Umair Khan",
-  tagline: "French Polishing & Furniture Restoration – Traditional Craftsmanship",
-  since: "1986",
+  tagline: "Italian Polishing | PU Polishing | Colour PU Polishing | Melamine Polishing",
+  since: "2006",
   phoneDisplay: "+91 91096 26472",
   phoneHref: "tel:+919109626472",
   whatsapp: "https://wa.me/qr/XNSU5AGOMUP4G1",
