@@ -43,7 +43,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: BIZ.name,
-  description: `French polishing, furniture restoration and veneer repair in ${BIZ.locality}.`,
+  description: `Italian polishing, PU polishing, colour PU polishing, melamine polishing and furniture restoration in ${BIZ.locality}.`,
   address: {
     "@type": "PostalAddress",
     streetAddress: BIZ.street,
