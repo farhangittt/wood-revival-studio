@@ -17,7 +17,7 @@ import chevronWardrobeImg from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.44_PM
 import mandirImg from "@/assets/WhatsApp_Image_2026-08-05_at_3.00.11_PM.jpeg";
 
 const BIZ = {
-  name: "Polishcraft",
+  name: "dash",
   owner: "Mr. Umair Khan",
   tagline:
     "Italian Polishing | PU Polishing | Colour PU Polishing | Melamine Polishing",
