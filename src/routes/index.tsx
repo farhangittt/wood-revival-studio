@@ -1,23 +1,10 @@
-```tsx
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-
 import heroImg from "@/assets/hero-craftsman.jpg";
 import logoImg from "@/assets/polishcraft-logo.png";
 
-import carvedDoorImg from "@/assets/WhatsApp_Image_2026-08-05_at_3.06.44_PM.jpeg";
-import gildedChairImg from "@/assets/WhatsApp_Image_2026-08-05_at_3.02.30_PM.jpeg";
-import poojaUnitImg from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.21_PM.jpeg";
-import wardrobeSageImg from "@/assets/WhatsApp_Image_2026-08-05_at_3.01.11_PM.jpeg";
-import wardrobeOakImg from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.22_PM.jpeg";
-import flushDoorImg from "@/assets/WhatsApp_Image_2026-08-05_at_2.54.15_PM.jpeg";
-import tvUnitImg from "@/assets/WhatsApp_Image_2026-08-05_at_2.52.46_PM.jpeg";
-import teakDoorImg from "@/assets/WhatsApp_Image_2026-08-05_at_2.53.33_PM.jpeg";
-import chevronWardrobeImg from "@/assets/WhatsApp_Image_2026-08-05_at_2.55.44_PM.jpeg";
-import mandirImg from "@/assets/WhatsApp_Image_2026-08-05_at_3.00.11_PM.jpeg";
-
 const BIZ = {
-  name: "dash",
+  name: "Polishcraft",
   owner: "Mr. Umair Khan",
   tagline:
     "Italian Polishing | PU Polishing | Colour PU Polishing | Melamine Polishing",
@@ -35,14 +22,14 @@ const BIZ = {
   lng: 77.4126,
   mapEmbed:
     "https://www.google.com/maps?q=Bagh+Umrao+Dulha,+Bhopal+462010&output=embed",
+  url: "https://in.polishcraftbhopal.workers.dev/",
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: BIZ.name,
-  description:
-    `Italian polishing, PU polishing, colour PU polishing, melamine polishing and furniture restoration in ${BIZ.locality}.`,
+  description: `Italian polishing, PU polishing, colour PU polishing, melamine polishing and furniture restoration in ${BIZ.locality}.`,
   address: {
     "@type": "PostalAddress",
     streetAddress: BIZ.street,
@@ -59,6 +46,7 @@ const jsonLd = {
   telephone: BIZ.phoneDisplay,
   email: BIZ.email,
   priceRange: "₹₹",
+  url: BIZ.url,
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -91,8 +79,7 @@ export const Route = createFileRoute("/")({
       },
       {
         name: "description",
-        content:
-          `Italian, PU, colour PU and melamine polishing plus furniture restoration in ${BIZ.locality}. Family-run since ${BIZ.since} with 20+ years' experience — call ${BIZ.phoneDisplay}.`,
+        content: `Italian, PU, colour PU and melamine polishing plus furniture restoration in ${BIZ.locality}. Family-run since ${BIZ.since} with 20+ years' experience — call ${BIZ.phoneDisplay}.`,
       },
       {
         property: "og:title",
@@ -100,19 +87,18 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content:
-          `Italian, PU, colour PU and melamine polishing for homes, offices and hotels by ${BIZ.name}.`,
+        content: `Italian, PU, colour PU and melamine polishing for homes, offices and hotels by ${BIZ.name}.`,
       },
       {
         property: "og:url",
-        content: "/",
+        content: BIZ.url,
       },
     ],
 
     links: [
       {
         rel: "canonical",
-        href: "/",
+        href: BIZ.url,
       },
     ],
 
@@ -128,82 +114,84 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     title: "Italian Polishing",
-    body:
-      "High-gloss Italian finishes with a deep mirror sheen — ideal for premium furniture, wardrobes and feature panels.",
+    body: "High-gloss Italian finishes with a deep mirror sheen — ideal for premium furniture, wardrobes and feature panels.",
   },
   {
     title: "PU Polishing",
-    body:
-      "Durable polyurethane coatings that resist scratches, moisture and daily wear while keeping the grain looking rich.",
+    body: "Durable polyurethane coatings that resist scratches, moisture and daily wear while keeping the grain looking rich.",
   },
   {
     title: "Colour PU Polishing",
-    body:
-      "Tinted PU finishes in the shade you want — matt, satin or gloss — perfectly matched to your interiors.",
+    body: "Tinted PU finishes in the shade you want — matt, satin or gloss — perfectly matched to your interiors.",
   },
   {
     title: "Melamine Polishing",
-    body:
-      "Fast-drying, economical melamine finishes that give doors, beds and units a smooth, even, long-lasting surface.",
+    body: "Fast-drying, economical melamine finishes that give doors, beds and units a smooth, even, long-lasting surface.",
   },
 ];
 
+/*
+ * Images are intentionally loaded from GitHub Raw.
+ *
+ * GitHub repository:
+ * farhangittt/wood-revival-studio
+ *
+ * Images:
+ * public/1.jpeg -> public/9.jpeg
+ */
+
+const GITHUB_RAW = "https://raw.githubusercontent.com/farhangittt/wood-revival-studio/main/public";
+
 const galleryItems = [
   {
-    img: carvedDoorImg,
-    alt: "Hand-carved teak double doors with polished floral detailing",
-    caption: "Carved teak doors – Italian polish",
+    img: `${GITHUB_RAW}/1.jpeg`,
+    alt: "Wood polishing project",
+    caption: "Wood polishing project",
   },
   {
-    img: gildedChairImg,
-    alt: "Ornate armchair with gold leaf carving and ivory lacquer finish",
-    caption: "Gilded armchair – gold leaf & PU",
+    img: `${GITHUB_RAW}/2.jpeg`,
+    alt: "Furniture polishing project",
+    caption: "Furniture polishing project",
   },
   {
-    img: poojaUnitImg,
-    alt: "Arched pooja unit with gold lotus motif and wooden drawers",
-    caption: "Arched pooja unit – custom finish",
+    img: `${GITHUB_RAW}/3.jpeg`,
+    alt: "Custom wood furniture",
+    caption: "Custom wood furniture",
   },
   {
-    img: wardrobeSageImg,
-    alt: "Sage green arched wardrobe with fluted open shelving",
-    caption: "Sage arched wardrobe – colour PU",
+    img: `${GITHUB_RAW}/4.jpeg`,
+    alt: "Wood finishing project",
+    caption: "Wood finishing project",
   },
   {
-    img: wardrobeOakImg,
-    alt: "Oak veneer sliding wardrobe with recessed handles",
-    caption: "Oak sliding wardrobe – melamine polish",
+    img: `${GITHUB_RAW}/5.jpeg`,
+    alt: "Furniture restoration",
+    caption: "Furniture restoration",
   },
   {
-    img: flushDoorImg,
-    alt: "Solid wood flush door with a deep red-brown polished finish",
-    caption: "Flush door – deep melamine polish",
+    img: `${GITHUB_RAW}/6.jpeg`,
+    alt: "Polished wooden furniture",
+    caption: "Polished wooden furniture",
   },
   {
-    img: tvUnitImg,
-    alt: "Built-in white gloss TV unit with grey fluted panel",
-    caption: "TV wall unit – high gloss PU",
+    img: `${GITHUB_RAW}/7.jpeg`,
+    alt: "Wooden door polishing",
+    caption: "Wooden door polishing",
   },
   {
-    img: teakDoorImg,
-    alt: "Five-panel teak main door with warm polished finish",
-    caption: "Teak panel door – natural polish",
+    img: `${GITHUB_RAW}/8.jpeg`,
+    alt: "Premium wood finishing",
+    caption: "Premium wood finishing",
   },
   {
-    img: chevronWardrobeImg,
-    alt: "Grey and white wardrobe with chevron grooved panels",
-    caption: "Chevron wardrobe – matt colour PU",
-  },
-  {
-    img: mandirImg,
-    alt: "Carved wooden mandir arch with jaali work and drawer unit",
-    caption: "Carved mandir – hand-finished teak",
+    img: `${GITHUB_RAW}/9.jpeg`,
+    alt: "Hand finished woodwork",
+    caption: "Hand finished woodwork",
   },
 ];
 
 function Index() {
   const [sent, setSent] = useState(false);
-
   const [lightbox, setLightbox] = useState<
     null | (typeof galleryItems)[number]
   >(null);
@@ -232,13 +220,12 @@ function Index() {
         Skip to content
       </a>
 
-      {/* HEADER */}
       <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3">
           <span className="flex min-w-0 items-center gap-2">
             <img
               src={logoImg}
-              alt="Polishcraft logo"
+              alt=""
               width={36}
               height={36}
               className="size-9 shrink-0"
@@ -336,7 +323,7 @@ function Index() {
               <a
                 href={BIZ.whatsapp}
                 data-track="whatsapp-hero"
-                rel="noopener noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="inline-flex min-h-11 items-center rounded-md border-2 border-accent px-6 font-semibold text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
               >
@@ -390,8 +377,8 @@ function Index() {
         <section id="about" className="bg-cream py-20">
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
             <img
-              src={mandirImg}
-              alt="Hand-carved wooden mandir with jaali detailing, finished in our workshop"
+              src={`${GITHUB_RAW}/9.jpeg`}
+              alt="Hand-finished wooden furniture from our workshop"
               loading="lazy"
               width={1200}
               height={900}
@@ -415,8 +402,8 @@ function Index() {
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Every project is completed with attention to detail, using
                 high-quality materials and proven techniques to restore the
-                natural beauty and durability of your furniture. Whether it's a
-                new piece or restoring an old one, we focus on craftsmanship,
+                natural beauty and durability of your furniture. Whether it's
+                a new piece or restoring an old one, we focus on craftsmanship,
                 quality, and customer satisfaction.
               </p>
 
@@ -551,8 +538,8 @@ function Index() {
           </h2>
 
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Send a few details and we'll come back with a free,
-            no-obligation quote.
+            Send a few details and we'll come back with a free, no-obligation
+            quote.
           </p>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-2">
@@ -709,7 +696,7 @@ function Index() {
                 />
               </div>
 
-              {/* Honeypot */}
+              {/* honeypot */}
               <div
                 className="hidden"
                 aria-hidden="true"
@@ -773,7 +760,7 @@ function Index() {
                       data-track="whatsapp-contact"
                       href={BIZ.whatsapp}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                     >
                       Message us
                     </a>
@@ -832,7 +819,6 @@ function Index() {
         </section>
       </main>
 
-      {/* FOOTER */}
       <footer className="border-t border-border bg-cream py-8">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 text-sm text-muted-foreground">
           <p>
@@ -840,15 +826,14 @@ function Index() {
             {BIZ.region}.
           </p>
 
-          <p>Polishing & Furniture Restoration</p>
+          <p>[Social links placeholder]</p>
         </div>
       </footer>
 
-      {/* WHATSAPP FLOATING BUTTON */}
       <a
         href={BIZ.whatsapp}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
         data-track="whatsapp-float"
         aria-label="Chat with us on WhatsApp"
         className="fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-accent font-bold text-accent-foreground shadow-warm"
@@ -858,4 +843,3 @@ function Index() {
     </div>
   );
 }
-```
